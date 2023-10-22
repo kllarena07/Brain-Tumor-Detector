@@ -6,9 +6,10 @@
   <div id="hero-text">
     <h1>NeuroScanAI</h1>
     <p>Tumor detection made easy</p>
-    <a class="bold" href='#demo'>Demo</a>
+    <a id="desktop-btn" class="bold" href='#demo'>Demo</a>
   </div>
   <img id="hero-image" src={Brain} alt="An AI generated brain" />
+  <a id="mobile-btn" class="bold" href='#demo'>Demo</a>
 </section>
 
 <style>
@@ -22,7 +23,7 @@
     background: linear-gradient(to right, #FF00E5, #9E00FF);
     background-clip: text;
     color: transparent;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-size: 5rem;
   }
@@ -50,5 +51,52 @@
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
+  }
+  #mobile-btn {
+    display: none;
+    transform: scale(3);
+  }
+  @media only screen and (max-width: 600px) {
+    #hero-container {
+      display: flex;
+      flex-direction: column;
+    }
+    #desktop-btn {
+      display: none;
+    }
+    #mobile-btn {
+      display: inline-block;
+    }
+    #hero-text {
+      transform: scale(1.4);
+    }
+    #hero-image {
+      transform: scale(0.9);
+    }
+  }
+  @media only screen and (600px < width <= 1020px) {
+    #hero-container {
+      display: flex;
+      flex-direction: column;
+    }
+    #desktop-btn {
+      display: none;
+    }
+    #mobile-btn {
+      display: inline-block;
+    }
+    #hero-text {
+      transform: scale(2);
+    }
+  }
+  @media only screen and (width <= 1270px) {
+    #hero-container {
+      transform: scale(0.5);
+    }
+  }
+  @media only screen and (1270px < width < 1635px) {
+    #hero-container {
+      transform: scale(0.8);
+    }
   }
 </style>

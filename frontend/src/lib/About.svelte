@@ -15,16 +15,18 @@
     </p>
   </div>
   <div class="sub">
+    <div id="video-wrapper">
+      <video autoplay muted>
+        <source src={video}>
+        This browser does not support videos
+      </video>
+    </div>
     <p>
       <span class="bold">Reliability is our main priority.</span>
        By utilizing the latest cutting-edge AI technology to analyze MRI scans, 
        we ensure the
        <span class="gradient bold">highest levels of precision</span>
     </p>
-    <video autoplay muted width="1200">
-      <source src={video}>
-      This browser does not support videos
-    </video>
   </div>
 </section>
 
@@ -34,12 +36,74 @@
   }
   .sub {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 10rem 7rem;
+    gap: 10rem;
+  }
+  .sub:nth-child(1) {
+    justify-content: center;
+    align-items: center;
+  }
+  .sub:nth-child(2) {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
   }
   p {
     max-width: 550px;
-    font-size: 2.25rem;
+  }
+  #video-wrapper {
+    max-width: 1000px;
+  }
+  video {
+    width: 100%;
+  }
+  @media only screen and (width < 1000px) {
+    .sub:nth-child(1) {
+      display: inline-block;
+      padding: 2.5rem;
+    }
+    p {
+      margin-top: 3rem;
+      font-size: 1rem;
+    }
+    .sub:nth-child(2) {
+      display: inline-block;
+      padding: 2.5rem;
+    }
+  }
+  @media only screen and (1000px < width < 1200px) {
+    img {
+      width: 1000px;
+      margin-bottom: 3rem;
+    }
+    .sub {
+      display: inline-block;
+      margin: auto;
+      padding: 2.5rem;
+    }
+    p {
+      font-size: 2rem;
+      margin: auto;
+    }
+  }
+  @media only screen and (1200px < width < 1400px) {
+    p {
+      font-size: 1.25rem;
+    }
+  }
+  @media only screen and (1400px < width < 1600px) {
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  @media only screen and (1600px < width < 1920px) {
+    p {
+      font-size: 2rem;
+    }
+  }
+  @media only screen and (min-width: 1920px) {
+    p {
+      font-size: 2.25rem;
+    }
   }
 </style>

@@ -14,6 +14,7 @@
   }
 </script>
 
+<p id="disclaimer">A desktop is required to use this tool</p>
 <form method="POST" action="?/getResult">
   <h2>Upload</h2>
   <div id="file-upload-container">
@@ -106,5 +107,18 @@
   }
   .bold {
     font-weight: bold;
+  }
+  #disclaimer {
+    display: none;
+    text-align: center;
+    color: white;
+  }
+  @media only screen and (max-width: 1000px) {
+    form {
+      display: none;
+    }
+    #disclaimer {
+      display: block;
+    }
   }
 </style>

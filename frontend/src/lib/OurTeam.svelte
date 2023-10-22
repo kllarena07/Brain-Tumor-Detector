@@ -41,4 +41,15 @@
     padding: 0;
     list-style: none;
   }
+  @media only screen and (width <= 1020px) {
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media only screen and (max-width: 1650px) {
+    #our-team {
+      transform: scale(0.9);
+    }
+  }
 </style>

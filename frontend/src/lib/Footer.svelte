@@ -51,4 +51,9 @@
     text-decoration: none;
     color: white;
   }
+  @media only screen and (max-width: 1020px) {
+    footer {
+      display: none;
+    }
+  } 
 </style>

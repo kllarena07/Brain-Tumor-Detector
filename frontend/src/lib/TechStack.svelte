@@ -1,27 +1,29 @@
 <script lang="ts">
   import TechIcon from "$lib/TechIcon.svelte";
   import SvelteLogo from '$lib/assets/SvelteLogo.png'
+  import HuggingFaceLogo from '$lib/assets/huggingface.png'
+  import YoloLogo from '$lib/assets/yolo.png'
+  import FigmaLogo from '$lib/assets/figma.png'
+  import VercelLogo from '$lib/assets/vercel.png'
 </script>
 
 <section>
-  <h3>
-    Made with ❤️ and with...
-  </h3>
+  <h3>Made with ❤️ and with...</h3>
   <ul>
     <li>
       <TechIcon src={SvelteLogo} />
     </li>
     <li>
-      <TechIcon src={SvelteLogo} />
+      <TechIcon src={YoloLogo} />
     </li>
     <li>
-      <TechIcon src={SvelteLogo} />
+      <TechIcon src={FigmaLogo} />
     </li>
     <li>
-      <TechIcon src={SvelteLogo} />
+      <TechIcon src={HuggingFaceLogo} />
     </li>
     <li>
-      <TechIcon src={SvelteLogo} />
+      <TechIcon src={VercelLogo} />
     </li>
   </ul>
 </section>
@@ -38,5 +40,10 @@
     gap: 1rem;
     padding: 1rem;
     list-style: none;
+  }
+  @media only screen and (max-width: 1020px) {
+    ul {
+      margin-bottom: 2rem;
+    }
   }
 </style>
