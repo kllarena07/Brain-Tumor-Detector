@@ -18,7 +18,7 @@
       <Portrait src={Jawad} name="Jawad Mourad" role="Frontend Engineer" />
     </li>
     <li>
-      <Portrait src={Madhi} name="Madhi Rizk" role="Data Scientist" />
+      <Portrait src={Madhi} name="Mahdi Rizk" role="Data Scientist" />
     </li>
   </ul>
 </section>

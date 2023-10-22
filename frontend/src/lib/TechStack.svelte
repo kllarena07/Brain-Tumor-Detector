@@ -1,7 +1,6 @@
 <script lang="ts">
   import TechIcon from "$lib/TechIcon.svelte";
   import SvelteLogo from '$lib/assets/SvelteLogo.png'
-  import HuggingFaceLogo from '$lib/assets/huggingface.png'
   import YoloLogo from '$lib/assets/yolo.png'
   import FigmaLogo from '$lib/assets/figma.png'
   import VercelLogo from '$lib/assets/vercel.png'
@@ -18,9 +17,6 @@
     </li>
     <li>
       <TechIcon src={FigmaLogo} />
-    </li>
-    <li>
-      <TechIcon src={HuggingFaceLogo} />
     </li>
     <li>
       <TechIcon src={VercelLogo} />
