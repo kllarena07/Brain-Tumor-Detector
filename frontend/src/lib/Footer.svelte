@@ -9,10 +9,10 @@
       <h3>NeuroScan<span>AI</span></h3>
     </div>
     <div id="desktop-container">
-      <a href='#'>Home</a>
-      <a href='#'>About Us</a>
-      <a href='#'>Details</a>
-      <a href='#'>Demo</a>
+      <a href='#hero-container'>Home</a>
+      <a href='#about-container'>About Us</a>
+      <a href='#our-team'>Our Team</a>
+      <a href='#demo'>Demo</a>
     </div>
   </nav>
 </footer>

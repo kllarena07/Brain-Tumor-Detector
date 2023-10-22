@@ -18,7 +18,6 @@
 </header>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
   header {
     padding-top: 1.25rem;
   }
@@ -53,7 +52,7 @@
   }
   #desktop-container a:last-child {
     background-color: rgb(217, 217, 217);
-    background: linear-gradient(270deg, rgba(217, 217, 217, 1), rgba(217, 217, 217, 0.3));
+    background: rgba(217, 217, 217, 0.3);
     padding: .75rem 1.75rem;
     font-weight: bolder;
     border-radius: 2rem;

@@ -14,11 +14,11 @@
   }
 </script>
 
-<form>
+<form method="POST" action="?/getResult">
   <h2>Upload</h2>
   <div id="file-upload-container">
     <div id="icon-container">
-      <img src={UploadIcon} />
+      <img src={UploadIcon} alt='Upload your MRI scans here' />
       <p id="instructions">Drag and drop <span class="gradient bold">here</span></p>
     </div>
     <img id="hero-image-preview" src={heroImage} alt='' />
