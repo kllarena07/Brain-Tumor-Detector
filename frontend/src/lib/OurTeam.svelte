@@ -9,10 +9,10 @@
   <h2 class="bold">Our Team</h2>
   <ul>
     <li>
-      <Portrait src={Moumen} name="Moumen Msallaty" role="ML Engineer" />
+      <Portrait src={Moumen} name="Moumen Msallaty" role="Data Scientist / Lead ML Engineer" />
     </li>
     <li>
-      <Portrait src={Kieran} name="Kieran Llarena" role="Fullstack Engineer" />
+      <Portrait src={Kieran} name="Kieran Llarena" role="Designer / Fullstack Engineer" />
     </li>
     <li>
       <Portrait src={Jawad} name="Jawad Mourad" role="Frontend Engineer" />
